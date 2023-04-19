@@ -33,7 +33,7 @@ class _GameScreenState extends State<GameScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               DragTarget<Color>(
-                key: Key('1'),
+                key: Key('One'),
                 onAccept: (data) {
                   if (data == draggableColor1) {
                     setState(() => color1 = data);
@@ -45,7 +45,7 @@ class _GameScreenState extends State<GameScreen> {
                   height: 130,
                   child: Center(
                     child: Text(
-                      '1',
+                      'One',
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 30,
@@ -55,7 +55,7 @@ class _GameScreenState extends State<GameScreen> {
                 ),
               ),
               DragTarget<Color>(
-                key: Key('2'),
+                key: Key('Two'),
                 onAccept: (data) {
                   if (data == draggableColor2) {
                     setState(() => color2 = data);
@@ -67,7 +67,7 @@ class _GameScreenState extends State<GameScreen> {
                   height: 130,
                   child: Center(
                     child: Text(
-                      '2',
+                      'Two',
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 30,
